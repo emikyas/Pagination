@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 import { getStaticList } from '../services/staticList';
 import { paginate } from '../utils/paginate';
@@ -28,8 +27,6 @@ class List extends Component {
         const {
             pageSize,
             currentPage,
-            sortColumn,
-            selectedGenre,
         } = this.state;
 
         const { totalCount, data: lists } = this.getPageData();
@@ -61,8 +58,8 @@ class List extends Component {
                                 </div>
                                 <Pagination
                                     itemsCount={totalCount}
-                                    pageSize={this.state.pageSize}
-                                    currentPage={this.state.currentPage}
+                                    pageSize={pageSize}
+                                    currentPage={currentPage}
                                     onPageChange={this.handlePageChange}
                                 />
                             </div>
