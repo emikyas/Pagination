@@ -1,0 +1,14 @@
+[
+      {
+        "id": 1,
+        "type": "datetime",
+        "value": "1994-12-15T13:47",
+        "format": "YYYY-MM-DDTHH:mm"
+      },
+      {
+        "id": 2,
+        "type": "datetime",
+        "value": "1994-12-15T13:47",
+        "format": "YYYY-MM-DDTHH:mm"
+      }
+]
